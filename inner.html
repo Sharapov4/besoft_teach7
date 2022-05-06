@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .q{
+            height: 100px;
+            width: 500px;
+            border: 1px solid black;
+            background-color: aqua;
+            font-size: 10px;
+            text-align: center;
+        }
+        .q1{
+            height: 10px;
+            width: 200px;
+            margin-left: 0px;
+            margin-right: -3px;
+        }
+        .q2{
+            font-size: 10px;
+            margin-right: -3px;
+        
+        }
+        .q3{
+            font-size: 10px;
+        }
+        .div{
+            height: 30px;
+            width: 500px;
+            border: 1px solid blue;
+            background-color: aqua;
+
+        }
+        .w1{
+            margin-left: 485px;
+            width: 10px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="q" >
+        <h1>Me Google</h1>
+        <input id="fa" class="q1" type="text">
+        <button id="fa1" onclick="sa()" class="q2" >отправить</button>
+        <button id="fa2" onclick="sa1()" class="q3">Удалить всех</button>
+    </div>
+    <div id="div" class="div" > <button onclick="fa()" class="w1">x</button></div>
+    <script>
+        let fa = document.getElementById('fa')
+        let fa1 = document.getElementById('fa1')
+        let fa2 = document.getElementById('fa2')
+        let item = localStorage.getItem ('key') || [] 
+
+        function sa() {
+            item.push(fa.value)
+            fa.value = '';
+            localStorage.setItem('key',JSON.stringify(item))
+            item.map((e,i)=>{
+                document.getElementById('div').innerHTML +=`<div>${e}</div>` 
+            }) 
+           
+
+            
+
+        }
+            
+
+
+    </script>
+    
+</body>
+</html>

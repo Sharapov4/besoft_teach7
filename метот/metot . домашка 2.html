@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input id="id" placeholder="жаз чиркин" value="" type="" name="">
+	<button onclick="sa" >Ok</button>
+	<div id="item" ></div>
+	<script type="text/javascript">
+
+		let s = document.getElementById('id')
+
+
+
+
+
+		let oma [
+		{
+			name:'Samsung',
+			text:'Samsung text',
+			price:'30000'
+			img:'https://media.istockphoto.com/photos/galaxy-s20-on-a-white-background-picture-id1213025509?k=20&m=1213025509&s=612x612&w=0&h=rNpF6WG9QUJeHvJ5bqrAJyHlYl3pPiYG4tAY4YDZ5w4='
+
+		},{
+			name:'Nokia',
+			text:'Nokia text',
+			price:'25000'
+			img:'https://st2.depositphotos.com/1001564/7535/i/950/depositphotos_75358871-stock-photo-old-nokia-mobile-phone.jpg'
+
+		},{
+			name:'Honor',
+			text:'Honor text',
+			price:'35000'
+			img:'https://m.media-amazon.com/images/I/41vE4XW4vrL.jpg'
+
+		},{
+			name:'Honor',
+			text:'Honor text',
+			price:'35000'
+			img:'https://m.media-amazon.com/images/I/41vE4XW4vrL.jpg'
+
+		}
+
+		]	
+		   function urmat() {
+    item.innerHTML = ''
+     for (let i = 0; i < oma.length; i++) {
+      item.innerHTML += `<div class="card">
+       <img class="img_" src="${oma[i].img}"/>
+       <h1 class = 'q'>${oma[i].text}</h1>
+       <h1 class = 'q'>${oma[i].price}</h1>
+
+     </div>`
+     }
+    }
+
+    urmat()
+
+   function add(){
+
+   oma = oma.filter(e => text.value)
+
+    text.value = '';
+    console.log(oma)
+
+    urmat()
+   }	
+
+
+
+
+
+	</script>
+
+</body>
+</html>

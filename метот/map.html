@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.f{
+			background-color: red;
+			font-size: 20px;
+			margin: 10px;
+		}
+		.x{
+			background-color: black;
+			color: red;
+			font-size: 20px;
+		}
+
+	</style>
+</head>
+<body>
+
+		<input class="f" id="q" value="" type="четам" name="четам" placeholder="четам">
+		<input class="f" id="q1" type="четам" name="четам" placeholder="сурот">
+	<button class="x" onclick="sa()">ok</button>
+	<div id="div">
+		<!-- <ol id="div1">
+		</ol> -->
+	</div>
+	<script>
+		// let q1 = document.getElementById(q1)
+		let q = document.getElementById('q')
+		// let div1 = document.getElementById('div1')
+		let a = [];
+		let d = [];
+		function sa() {
+				a.push([
+					{key:q.value},
+					{img:q.value},	])
+
+				// q.value = '';
+				// div1.innerHTML = '';
+
+				// a.map((e,i) =>{
+				// 	div1.innerHTML += `<li>${e}</li>`
+				a.value = '';
+				d.value = '';
+					console.log(a)
+				// })
+
+			
+		// for(let i = 0 ; i < a.length ; i++){
+		// 	if (i % 2 == 0) {
+		// 			div1.innerHTML += `<li style = "color:red;">${a[i]}</li>`
+		// 	}else if (i % 2 == 1) {
+		// 			div1.innerHTML += `<li style = "color:green;">${a[i]}</li>`
+				
+		// 	}
+		// }
+
+	}
+		
+		
+	</script>
+
+
+</body>
+</html>

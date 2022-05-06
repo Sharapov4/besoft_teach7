@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<div style="display: flex; flex-wrap: wrap; " id="id">
+	
+</div>
+<body>
+	<script type="text/javascript">
+
+		let a = prompt('канча')
+		let d = document.getElementById('id')
+		 let color = ['red','blue','black','green','#B3B6B7','yellow,']
+		 	let s = 0;
+		for (let i = a; i > 0; i--) {
+
+				d.innerHTML += `<div style='border-radius: 50px;height: 100px;width: 100px;border:1px solid black;
+					background-color: ${color[(i-1)%5]}; display: flex;justify-content:center;margin:30px'><h1 style='justifyContent:center;alignContent:center; color:white'>${i}</h1></div 					 `
+		}
+		
+
+		
+
+		// let a = +prompt('канча')
+		// function asan(a = 1, e = 'hello'){
+		// for (let i = 0; i < a; i++) {
+		// 		asan + i
+		// 	// console.log(`ewf: ${e}`)
+		// 				div.innerHTML += `<span style='color: blue; borderRadius:50px;'>${ss[i]}</span>`
+
+
+		// 	}
+
+		// }
+		// asan(10, '')
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.ss1{
+			height: 1000px;
+			width: 1000px;
+			display: flex;
+		}
+		.e{
+			border-radius: 50px;
+			height: 100px;
+			width: 100px;
+			background-color: green;
+
+		}
+		.e1{
+			border-radius: 50px;
+			height: 100px;
+			width: 100px;
+			background-color: green;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="ss1">
+	<button class="e" id="id_" onclick="name_()">+</button>
+	<div class="e1"id="id1" onclick="name_()">  </div>
+	<button class="e" id="id1_" onclick="name1_()">-</button>
+</div>
+	<script type="text/javascript">
+	   let a = document.getElementById('id1_')
+	   // let n = '2022';
+	   let n = document.getElementById('id1')
+	   let s = 0
+
+		function name_() {
+			n.innerHTML = s++
+			// n.textAlign:center;
+			// a.style.backgroundColor ='red'
+			// a.style.height = '100px'
+			// a.style.width = '100px'
+			
+		}
+		function name1_(){
+			s -= 1
+			n.innerHTML = s
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

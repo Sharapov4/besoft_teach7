@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		<style type="text/css">
+		.ss1{
+			height: 1000px;
+			width: 1000px;
+			display: flex;
+		}
+		.e{
+			border-radius: 50px;
+			height: 100px;
+			width: 100px;
+			background-color: green;
+
+		}
+		.e1{
+			border-radius: 50px;
+			height: 100px;
+			width: 100px;
+			background-color: green;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
+
+</head>
+<body>
+		<div class="ss1">
+	<!-- <button class="e" id="id_" onclick="name_()">добавить</button>
+	<div class="e1"id="id1" onclick="name_()"> asan </div> -->
+	<button class="e" id="id1_" onclick="name1_()">удалить</button>
+</div>
+	<script type="text/javascript">
+	   let a = document.getElementById('id1_')
+	   // let n = document.getElementById('id1')
+	   let s = 'добавить'
+	   let q = 'удалить'
+		function name_() {
+			a.innerHTML = s
+		}
+		function name1_(){
+			q += s
+			a.innerHTML = q		
+}
+	function name1_(){
+		s + q
+		a.innerHTML = s
+	}
+	</script>
+
+</body>
+</html>

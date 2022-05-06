@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="div">
+		<!-- <span>Hello Ascarali</span> -->
+	</div>
+	<script type="text/javascript">
+		
+ 	let s =	document.getElementById('div')
+		let body_ = document.body;
+
+		body_.onkeypress = (i) =>{
+			if (i.keyCode == 13) {
+				div.style.color = 'red'
+			}else if (i.keyCode == 32) {
+				div.style.color ='blue'
+			}
+
+			else {
+				s.innerHTML += i.key
+			}
+
+		}
+		
+	</script>
+
+</body>
+</html>

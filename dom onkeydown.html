@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.a{
+			width: 100px;
+			height: 100px;
+			border:1px solid black;
+			 background-color: blue;
+			 position: absolute;
+	}
+	.ss{
+		width: 500px;
+		height: 500px;
+		border:1px solid black;
+		position: absolute;
+		overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+		<!-- <input type="text" id="id"/> -->
+		<div class="ss">
+	<div class="a" id="div">
+	</div>
+	</div>
+	<script type="text/javascript">
+		let body_ = document.body;
+		let div = document.getElementById('div')
+		// let id = document.getElementById('id')
+		// let body_ = document.body;
+		let top_ = 0;
+		let left = 0; 
+		// let right = 0; 
+
+		
+
+
+		body_.onkeydown = (asan) => {
+			if (asan.keyCode == 40) {
+				top_ += 10;
+				div.style.top = `${top_}px`
+				// div.innerHTML = id.value
+				// id.value = ''
+			}if (asan.keyCode == 39) {
+				left += 10;
+				div.style.left = `${left}px`
+				// div.innerHTML = id.value
+				// id.value = ''
+			}if (asan.keyCode == 37) {
+				left -= 10;
+				div.style.left = `${left}px`
+				// div.innerHTML = id.value
+				// id.value = ''
+			}if (asan.keyCode == 38) {
+				top_ -= 10;
+				div.style.top = `${top_}px`
+				// div.innerHTML = id.value
+				// id.value = ''
+			// }else if (asan.keyCode ) {}
+
+			// if (asan.keyCode == 13) {
+			// console.log(asan.key)
+			}if (top_ == 500) {
+				top_ = -100
+			}else if (top_ == -100) {
+				top_ = 500
+				
+		}if (left == 500) {
+				left = -100
+			}else if (left == -100) {
+				left = 500
+			}
+			
+
+			
+
+
+
+		}
+	// }
+
+	</script>
+
+</body>
+</html>

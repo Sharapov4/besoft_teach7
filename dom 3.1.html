@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<style type="text/css">
+		.asan{
+			height: 400px;
+			width: 400px;
+			justify-content: center;
+		}
+		.card{
+			height: 500px;
+			width: 400px;
+			border: 1px solid black;
+			border-radius: 15px;
+			overflow: hidden;
+			margin: 15px;
+		}
+		.s{
+			text-align: center;
+			color: green;
+		}
+		.aa{
+			background-color: red;
+			color: black;
+			justify-content: center;
+
+		}
+	</style>
+	<div id="di" style="display: flex; flex-wrap: wrap;"></div>
+	<script type="text/javascript">
+		  	 let div = document.getElementById('di');
+
+		 
+		// let div = document.getElementById('di');
+		// div.innerHTML = `
+		// <div class="card">
+		// 	<img class='asan' src='https://pbs.twimg.com/profile_images/1400193003273269254/kfqPmT4S_400x400.jpg'/>
+		// 	<div class= "s"> Lana Rhoades</div>
+		// </div>`
+let mass = [
+				{
+					img:'https://i.pinimg.com/originals/84/9e/53/849e538d6c48fff0fd919c3ea9fc380a.jpg',
+					title: 'биро'
+				},
+				{
+					img:'https://kingchoice.me/media/CACHE/images/87973dc34339632588470e49d5008b11_70zlkHN/5b995751b2802dd6690fd1c88fffdcee.jpg',
+					title: 'эко'
+
+				},
+				{
+					img:'https://pbs.twimg.com/profile_images/1400193003273269254/kfqPmT4S_400x400.jpg',
+					title: 'учо'
+
+				},
+			]
+
+		let a = 0;
+		 for (let i = 0; i < 3; i++) {
+		  	  
+		  	 // let div = document.getElementById('di');
+		div.innerHTML += `
+		<div class="card">
+			<img class='asan' src="${mass[i].img}"/>
+			<div class= "s"> 
+			Lana Rhoades
+			<h3>${mass[i].title}</h3>
+			<button class ='aa'> снять </button>
+			</div>
+		</div>`
+		  }
+	</script>
+</body>
+</html>

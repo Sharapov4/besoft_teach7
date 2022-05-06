@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div_"  ></div>
+    <script> 
+        let div_= document.getElementById('div_')
+        let bir = 00;
+        let eki = 00;
+        let li = 00;
+        let body = document.body
+        let d = setInterval (()=>{
+        
+            bir ++
+            
+
+                div_.innerHTML =`<div>${eki > 9 ?eki :'0' +eki}:${bir > 9 ? bir : '0' +bir}:${li > 9 ? li : '0' +li}</div>`
+                
+                
+                if (bir == 60 ) {
+                    eki ++
+                    bir = 00
+                    
+                }if(li == 60){
+                    li ++
+                    li = 00
+                }
+              
+                
+               
+        },100)
+        
+        
+        
+    
+    </script>
+    
+</body>
+</html>

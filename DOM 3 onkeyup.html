@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+	<title></title>
+</head>
+<body>
+	<h1 id="text_"></h1>
+<div id="idq"></div>
+	<div id="ids"></div>
+
+	<script type="text/javascript">
+		const text = 'Hello Ascarali';
+		const ELEMENT = document.getElementsByTagName('span')
+		let div = document.getElementById('idq')
+		let div1 = document.getElementById('ids')
+
+		
+		let index = 0;
+		let r = 0; 
+		let l = 0;
+		let c = 0;
+
+		for(let i = 0; i < text.length; i++ ){
+				text_.innerHTML += `<span>${text[i]}</span>`;}
+		document.body.onkeypress = (s) =>{
+			if (ELEMENT[c].innerHTML == s.key) {
+				ELEMENT[c].style.color = 'green'
+
+				r++
+			}else{
+				ELEMENT[c].style.color = 'red'
+				l++
+			}
+			c++
+			div.innerHTML = `${r}`
+			div1.innerHTML = `${l}`
+		}
+
+		
+	
+	</script>
+
+</body>
+</html>

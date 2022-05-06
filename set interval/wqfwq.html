@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body id="sa">
+    <label for="customRange3"id="div_" class="form-label"><div >че там (50%)</div></label>
+<input onchange="" type="range" class="form-range" min="0" max="100" step="0.5" id="input_">
+    <div class="shadow-lg m-3 p-3 rounded-pill">Hello</div>
+
+    
+      <div class="form-check form-switch">
+        <input onchange="" class="form-check-input" type="checkbox" role="switch" id="asas" checked>
+        <label onchange="" class="form-check-label" id="sasa" for="flexSwitchCheckChecked">ак</label>
+      </div>
+  
+     
+    <script>
+        let sasa = document.getElementById('sasa')
+        let asas = document.getElementById('asas')
+        let sa = document.getElementById('as')
+
+        asas.onchange = (e)=>{
+            if(e.target.checked){
+            document.body.style.backgroundColor='red'
+              }  else {
+            document.body.style.backgroundColor='black'
+        }
+    }
+
+        
+        //  e.target.value
+    </script>
+</body>
+</html>   
+  <!-- if(e.target.value > 50){
+             console.log('max')
+            }else if(e.target.value < 50){
+                console.log('min') -->
+
+ <!-- // let s = document.getElementById('div_')
+
+        //  input_.onchange = (e) => {
+        
+        
+        //      s.innerHTML =  `<div> че там ${e.target.value}%</div>`
+        //     } -->

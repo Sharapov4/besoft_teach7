@@ -1,0 +1,111 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+ <title></title> 
+<style type="text/css"> 
+#idiv1{ 
+  width: 650px; 
+  height: 470px; 
+  border-radius: 20px; 
+  border: 2px solid black; 
+  background-color: #E584E3; 
+  position: relative; 
+  margin-top: 150px; 
+  margin-left: 400px; 
+} 
+#idin1{ 
+ position: absolute; 
+ background-color: white; 
+ width: 570px; 
+ height: 50px; 
+ border-radius: 10px; 
+ margin-left: 35px; 
+} 
+#idin2{ 
+ position: absolute; 
+ background-color: white; 
+ width: 570px; 
+ height: 50px; 
+ margin-top: 100px; 
+ border-radius: 10px; 
+ margin-left: 35px; 
+} 
+.p1{ 
+ font-size: 50px; 
+ color: white; 
+ margin-left: 80px; 
+} 
+#idbut1{ 
+margin-top: 200px;  
+width: 150px; 
+height: 50px; 
+border-radius: 10px; 
+margin-left: 230px; 
+} 
+#idiv2{ 
+font-size: 40px; 
+color: red; 
+margin-left: 600px; 
+} 
+body{ 
+ background-color: grey; 
+} 
+</style> 
+</head> 
+<body> 
+ <div id="idiv2"></div> 
+ <div id="idiv1"> 
+  <p class="p1">Войдите в систему</p> 
+  <input id="idin1" type="text" placeholder="LOGIN"> 
+  <input id="idin2" type="password" placeholder="PASSWORD"> 
+  <button onclick="own_()" id="idbut1" disabled>Войти</button> 
+ </div> 
+<script type="text/javascript"> 
+  let mass=[ 
+{ 
+ email:'urmatbek', 
+ pass:'urmat1' 
+}, 
+{ 
+ email:'ulay', 
+ pass:'ulay1' 
+}, 
+{ 
+ email:'samatbek', 
+ pass:'samat1' 
+} 
+]; 
+ 
+ let idin1 = document.getElementById('idin1') 
+ let idin2 = document.getElementById('idin2') 
+ let idbut1 = document.getElementById('idbut1') 
+ let idiv2 = document.getElementById('idiv2') 
+ 
+  idin1.oninput = function (){ 
+   if (idin1.value.length >= 1){ 
+    idbut1.disabled = true 
+   }else{ 
+     idbut1.disabled = false 
+   } 
+} 
+   idin2.oninput = function (){ 
+   if (idin2.value.length >= 1  ){ 
+    idbut1.disabled = false  
+   }else{ 
+     idbut1.disabled = true 
+   } 
+  } 
+ 
+  function own_(){ 
+   for(let i=0; i < mass.length; i++){ 
+    if (idin1.value == mass[i].email && idin2.value == mass[i].pass){ 
+     idiv2.innerHTML ='Hello World' 
+     i += mass.length 
+    }else{ 
+     idiv2.innerHTML ='' 
+    } 
+   } 
+  } 
+</script> 
+</body> 
+</html>

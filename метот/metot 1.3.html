@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <title></title>
+ <style>
+  .card{
+   width: 200px;
+   height: auto;
+   border: 1px solid black;
+   box-shadow: 0px 0px 10px black;
+   border-radius: 8px;
+   margin: 10px;
+  }
+  .img_{
+   width: 200px;
+   height: 250px;
+  }
+  .q{
+    text-align: center;
+  }
+ </style>
+</head>
+<body>
+ <input id='text' placeholder="искать" />
+ <button onclick="add()">ok</button>
+ <div style="display: flex; flex-wrap: wrap; margin-top: 20px;" id='item'>
+  
+ </div>
+ <script>
+  let a = [
+    { title: 'bmw', img: 'https://i.pinimg.com/736x/11/a5/62/11a562b1bdd3d587e4cea27990802381.jpg' },
+    { title: 'mers', img: 'https://avatars.mds.yandex.net/get-verba/787013/2a000001609d4b3bb7dfac0d25bd885e2318/cattouch' },
+    { title: 'tayota', img: 'https://www.elke.ee/bw_client_files/vsp/public/model_pictures/1495_toyota-camry-2021-gallery-01-full_tcm-3019-2203475.jpg' }
+   ];
+
+   function urmat() {
+    item.innerHTML = ''
+     for (let i = 0; i < a.length; i++) {
+      item.innerHTML += `<div class="card">
+       <img class="img_" src="${a[i].img}"/>
+       <h1 class = 'q'>${a[i].title}</h1>
+     </div>`
+     }
+    }
+
+    urmat()
+
+   function add(){
+
+   a = a.filter(e => text.value == '' ? true : e.title == text.value)
+
+    text.value = '';
+    console.log(a)
+
+    urmat()
+   }
+
+ </script>
+</body>
+</html>

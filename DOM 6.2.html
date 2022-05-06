@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+      .ars{
+   height: 220px;
+   width: 350px;
+   background-color: grey;
+   border-radius: 10px;
+   position: absolute;
+   left: 37%;
+   top: 25%;
+  }
+  .ar{
+   height: 30px;
+   width: 300px;
+   margin-left: 20px;
+   border-radius: 10px;
+  }
+
+
+ </style>
+</head>
+<body style="background-color: black">
+ <div style="display: flex;">
+ <div class="ars">
+
+
+  <h1 style="font-size: 35px; margin-left: 20px;">Войдите в систему</h1>
+  <input type="text" placeholder="  Логин" class="ar" id="iii">
+  <input type="password"placeholder="Пароль" class="ar" id="uuu">
+    <button style="height: 35px; width:
+  80px;border-radius: 12px;position: relative; left: 37%; top: 5%;" id="www">Войти</button>
+
+
+
+
+
+
+
+ </div>
+</div>
+<div id="div" onclick="div"></div>
+ <script type="text/javascript">
+  let div = document.getElementById('div')
+
+   let mass[
+   { 
+    log: 'asan'
+    pass: '1234'
+     { 
+    log: 'uson'
+    pass: '2234'
+   } { 
+    log: 'oma'
+    pass: '3234'
+   } { 
+    log: 'askarali'
+    pass: '4234'
+   }
+   inp.oninput = function(){
+    div.disabled = inp.value.length === 0 || pass.value.length === 0;
+
+   
+   
+  // let a = document.getElementById('ars')
+  // let b = document.getElementById('ar')
+  // let c = document.getElementById('rrr')
+  // c.disabled = true
+  // a.oninput = function() {
+  //  if (a.value.length == 3) {
+  //   c.disabled = false
+  //  }else{
+  //   c.disabled = true
+  //  }
+  // }
+  let a = document.getElementById('iii')
+  let b = document.getElementById('uuu')
+  let c = document.getElementById('www')
+  c.disabled = true
+  a.oninput = function() {
+   if (a.value.length >= 1) { 
+  b.oninput = function() {
+   if (b.value.length >= 1) {
+    c.disabled = false
+    }else{
+     c.disabled = true
+    }
+   }
+  }else{
+     c.disabled = true
+    }
+ }
+}

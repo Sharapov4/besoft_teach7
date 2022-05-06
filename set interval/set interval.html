@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div_" style="display: flex;justify-content: center; "></div>
+    <script> 
+        let div_= document.getElementById('div_')
+        let a = 10;
+        let body = document.body
+        let d = setInterval (()=>{
+                div_.innerHTML =`<div>${a--}</div>`
+                if (a == 0 ) {
+                    a = 10;
+                }
+                
+                if(a == 7){
+                     body.style.backgroundColor='black';
+                     div_.style.color ='white'
+                    } if(a == 5){
+                     body.style.backgroundColor='blue';
+                    } if(a == 3){
+                     body.style.backgroundColor='green';
+                    } if(a == 1){
+                     body.style.backgroundColor='white';
+                    } if(a == 0){
+                     body.style.backgroundColor='pnik';
+                     div_.style.color ='black'
+                    }
+
+        },1000)
+        
+        
+        
+    
+    </script>
+    
+</body>
+</html> 
+   <!-- // // setTimeout(()=> alert('hello'),5000);
+        // const dd = setInterval(()=>{ -->
+            <!-- // div_.innerHTML +=`<div>Hello</div>` -->
+        <!-- // },1000)
+
+        // setTimeout(()=>{
+        //     clearInterval(dd)
+        // },3000); -->

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rom{
+            background-color: black;
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="vniz" id="div1"></div>
+    <script>
+        let div1 = document.getElementById('div1')
+        let object1 = JSON.parse(localStorage.getItem('key'))
+        console.log(object1);
+        object1 ? 
+        div1.innerHTML = `
+        <div class='ram' style='display: flex;'>
+
+            <img class='piz' src=${object1.img}>
+
+            <span class='nad' style='z-index: 1;'>${object1.title}
+            <strong style='margin: 20px;color: red; margin-left: 2px;' >${object1.prise}</strong>
+            </span>
+            <button type='button' id='btnLocal' class='btn btn-outline-dark  s1'
+            style='margin-bottom: 70px;'>Заказать</button>
+        </div>` : null
+    </script>
+</body>
+
+</html>

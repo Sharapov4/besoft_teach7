@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		<style type="text/css">
+		.card{
+			width: 200px;
+			height: 300px;
+			border:1px solid black;
+			box-shadow: 0px 0px 10px black;
+			border-radius: 8px;
+			margin: 20px;
+		}
+		.pic{
+			width: 200px;
+			height: 250px;
+			border-radius: 8px;
+		}
+		.word{
+			font-size: 20px;
+			text-align: center;
+
+		}
+	</style>
+</head>
+<body>
+
+	<!-- <input id="text" placeholder="text" type="" name="">
+	<input id="text1" placeholder="text" type="" name=""> -->
+	<input id="text2" placeholder="искать" type="" name="">
+	<button onclick="add()">ok</button>
+	<div style="display: flex; flex-wrap: wrap;" id="item"></div>
+	<script type="text/javascript">
+		
+		let a = [
+			{ title : 'BMW', img:'https://i.pinimg.com/736x/11/a5/62/11a562b1bdd3d587e4cea27990802381.jpg'},
+			{ title : 'MERS', img:'https://avatars.mds.yandex.net/get-verba/787013/2a000001609d4b3bb7dfac0d25bd885e2318/cattouch'},
+			{ title : 'AUDI', img:'https://assets.avtocod.ru/storage/images/audi-100.jpg'}
+
+		];
+
+		function urmat (){
+			item.innerHTML =''
+
+		for(let i = 0; i < a.length; i++){
+
+			item.innerHTML +=`<div class='card'>
+				 <img class='pic' src='${a[i].img}'/>
+				 <h2 class='word'>${a[i].title}</h2>
+			</div>`
+		}
+
+
+			}
+		
+
+
+			urmat()
+
+		function add (){
+			a = a.filter(e => text2.value == '' ? true : e.title =='text2.value')
+
+
+				 // console.log(d)
+			// a.push({text:text.value,img:text1.value})
+			// text.value ='';
+			text2.value = '';
+			// console.log (a) 
+		
+
+		urmat()
+}
+
+	</script>
+
+
+</body>
+</html>

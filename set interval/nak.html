@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.a{
+			height: 250px;
+			width: 170px;
+			border:1px solid black;
+			box-shadow: 0px 0px 10px;
+			margin: 20px;
+			margin-left: 40px;
+			word-wrap:wrap;
+            overflow: hidden;
+
+
+		}
+		.q{
+			font-size: 10px;
+			/*margin-left: 55px;*/
+		}
+		.q1{
+			font-size: 10px;
+			/*margin-left: 67px;*/
+		}
+
+		img {
+			height: 200px;
+			width: 170px;
+		}
+        img:hover {
+			height: 230px;
+			width: 180px;
+            transition: 3s;
+		}
+		.e2{
+			width: 1230px;
+			height: 40px;
+			text-align: center;
+			border: 1px solid black ;
+			background-color: grey;
+			box-shadow: 10px 10px 10px;
+			position: fixed;
+			border-radius: 10px;
+		}
+		.u{
+			margin : 7px;
+			height: 20px;
+			width: 250px;
+			margin-left: 800px;
+			margin-right: 0px;
+			font-size: 20px;
+			border-top-left-radius: 10px;
+			border-bottom-left-radius: 10px;
+		}
+		.u1{
+			height: 28px;
+			margin-left: -5px;
+			font-size: 20px;
+			border-top-right-radius: 10px;
+			border-bottom-right-radius: 10px;
+
+
+		}
+
+
+
+
+	</style>
+</head>
+<body>
+	<div class="e2">
+		<!-- <a href="https://www.google.com/search?q=bmw+e38&oq=&aqs=chrome.1.69i59i450l8.2355136354j0j15&sourceid=chrome&ie=UTF-8">Меню</a>
+		<a href="file:///C:/Users/user/Documents/dom/%D0%BC%D0%B5%D1%82%D0%BE%D1%82/metot%20includes.html">Главый</a> -->
+
+		<input id="value" value="" class="u" placeholder="кайсы машина" type="" name="">
+		<button id="onclick" onclick="saaa()" class="u1" >OK</button>
+	</div>
+	<div id="goo"
+	style="display: flex; flex-wrap: wrap; ;margin: 20px;"></div>
+
+	<script type="text/javascript">
+		
+let mass = [
+            {
+                title: 'Bmw',
+                price: '2000000 сом',
+                img: 'https://i.ytimg.com/vi/D4owibomKRM/maxresdefault.jpg',
+            },
+            {
+                title: 'Teslo',
+                price: '3000000 сом',
+                img: 'https://platfor.ma/images/doc/b/7/b7576d8-004.jpg',
+            },
+            {
+                title: 'Mers',
+                price: '4000000 сом',
+                img: 'https://i.mycdn.me/videoPreview?id=291328099727&type=47&idx=30&tkn=3FsJqvTWmo2nSRTXl87azBNDLUw&i=1&fn=external_8',
+            },
+            {
+                title: 'Renj Rover',
+                price: '5000000 сом',
+                img: 'https://www.autotrader.com/wp-content/uploads/2021/06/2022-land-rover-range-rover-evoque-front-right-side.jpg',
+            },
+            {
+                title: '2022 Lexus IS',
+                price: '6000000 сом',
+                img: 'https://www.jmlexus.com/static/brand-lexus/vehicle/2022/IS/LEX-ISG-MY21-0038.04.png',
+            },
+            {
+                title: 'Teslo6',
+                price: '7000000 сом',
+                img: 'https://cdnimg.rg.ru/img/content/224/53/71/54_d_850.jpg',
+            },
+            {
+                title: 'Teslo7',
+                price: '8000000 сом',
+                img: 'https://cdn.motor1.com/images/mgl/4Vlgk/s1/4x3/tesla-model-x-first-drive.webp',
+            },
+            {
+                title: 'Teslo8',
+                price: '9000000 сом',
+                img: 'https://electrek.co/wp-content/uploads/sites/3/2021/05/Tesla-Logo-Hero.jpg?quality=82&strip=all&w=1000',
+            },
+            {
+                title: 'Mercedes Benz',
+                price: '10000000 сом',
+                img: 'https://img5.goodfon.ru/wallpaper/nbig/c/38/mercedes-benz-w210-e260.jpg',
+            },
+            {
+                title: 'Teslo10',
+                price: '11000000 сом',
+                img:'https://img5.lalafo.com/i/posters/api/1d/43/50/a334631c15e5dd31d9e93c945a.jpeg',
+            },
+                {
+                title: 'Bmw',
+                price: '2000000 сом',
+                img: 'https://i.ytimg.com/vi/D4owibomKRM/maxresdefault.jpg',
+            },
+            {
+                title: 'Teslo',
+                price: '3000000 сом',
+                img: 'https://platfor.ma/images/doc/b/7/b7576d8-004.jpg',
+            },
+            {
+                title: 'Teslo3',
+                price: '4000000 сом',
+                img: 'https://www.ixbt.com/img/n1/news/2022/0/1/5f6c5369ec05c4fe2700000f_large.jpg',
+            },
+            {
+                title: 'Renj Rover',
+                price: '5000000 сом',
+                img: 'https://www.autotrader.com/wp-content/uploads/2021/06/2022-land-rover-range-rover-evoque-front-right-side.jpg',
+            },
+            {
+                title: 'Teslo5',
+                price: '6000000 сом',
+                img: 'https://motor.ru/imgs/2021/02/12/14/4510736/39446fb5ac3dfd5418b6dc8689d82d27374db5d5.jpg',
+            },
+            {
+                title: 'Teslo6',
+                price: '7000000 сом',
+                img: 'https://cdnimg.rg.ru/img/content/224/53/71/54_d_850.jpg',
+            },
+            {
+                title: 'Teslo7',
+                price: '8000000 сом',
+                img: 'https://cdn.motor1.com/images/mgl/4Vlgk/s1/4x3/tesla-model-x-first-drive.webp',
+            },
+            {
+                title: 'Teslo8',
+                price: '9000000 сом',
+                img: 'https://electrek.co/wp-content/uploads/sites/3/2021/05/Tesla-Logo-Hero.jpg?quality=82&strip=all&w=1000',
+            },
+            {
+                title: 'Mercedes Benz',
+                price: '10000000 сом',
+                img: 'https://img5.goodfon.ru/wallpaper/nbig/c/38/mercedes-benz-w210-e260.jpg',
+            },
+            {
+                title: 'Teslo10',
+                price: '11000000 сом',
+                img:'https://img5.lalafo.com/i/posters/api/1d/43/50/a334631c15e5dd31d9e93c945a.jpeg',
+            },
+        ]
+
+        mass.map(e =>{
+        	goo.innerHTML += `<div class='a'>
+        	<img src='${e.img}'/>
+			        	<h1 class='q' style='text-align: center;'>${e.title}</h1>
+        	<h1 class='q1' style='text-align: center;'>${e.price }</h1>
+
+        	<div/>`
+        }) 
+
+        let value = document.getElementById('value') 
+        // let onclick = document.getElementById('onclick')
+        function saaa() {
+        	let mass2 = mass.filter(asan => asan.title.includes(value.value))
+        	console.log(mass2)
+        	goo.innerHTML ='';
+
+
+
+        mass2.map(e =>{
+        	goo.innerHTML += `<div class='a'>
+        	<img src='${e.img}'/>
+			        	<h1 class='q' style='text-align: center;'>${e.title}</h1>
+        	<h1 class='q1' style='text-align: center;'>${e.price }</h1>
+
+        	<div/>`
+        }) 
+
+
+         	
+         } 
+
+        
+			
+
+
+	</script>
+
+
+
+
+</body>
+</html>

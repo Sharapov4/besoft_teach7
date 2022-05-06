@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.q{
+			/*display: flex;*/
+			height: 100px;
+			width: 500px;
+			border:1px solid black;
+			background-color: red;
+		}
+		.q1{
+			margin-left: 50px;
+			height: 10px;
+			width: 200px;
+
+
+
+		}
+		.q2{
+			font-size: 10px;
+			margin-left: -4px;
+
+		}
+		.q3{
+			font-size: 10px;
+			margin-left: -8px;
+		}
+		.fa{
+			height: 40px;
+			width: 500px;
+			border:1px solid blue;
+			background-color: #82AEF6;
+			display: flex;
+
+		}
+		.fa1{
+			margin-left:395px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="q">
+		<h1 style="font-size: 20px;text-align: center;">My To Do list</h1>
+	<input id="input_" class="q1" type="" name="">
+	<button id="ok1" onclick="sa()" class="q2">Отправить</button>
+	<button id="ok2" onclick="sa1()" class="q3">Удалить всех</button>
+
+
+	</div>
+	<div id="Ok3" ></div>
+	<script type="text/javascript">
+		let w = document.getElementById('input_')
+		let e = document.getElementById('ok1')
+		let e1 = document.getElementById('ok2')
+		let div = document.getElementById("div")
+		let item = localStorage.getItem('key')  || []
+
+		function sa(){
+			 // input.value. = `<div>${input.value}</div>`
+			 item.push(w.value)
+			 w.value = '';
+			 console.log(item)
+			// localStorage.setItem('key', Json.stringfy(item))
+			
+			 item.map((e, i) => {
+			 				 document.getElementById("Ok3").innerHTML += `<div class = 'fa'><ol><li>${e}</ol></li><button onclick='da()' class ='fa1'>x</button></div>`;
+
+			 })
+
+
+		}
+		function sa1(){
+			 document.getElementById("Ok3").innerHTML = '';
+			 input.value ='';
+
+		}
+
+
+		// function da() {
+		// 	 input.value =`<div class = 'fa'><ol><li>${input.value}</ol></li><button onclick='da()' class ='fa1'>x</button></div>`
+		// 	 input.value = '';
+		// }
+
+
+
+
+
+
+	</script>
+</body>
+</html>

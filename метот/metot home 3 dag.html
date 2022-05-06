@@ -1,0 +1,270 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title> 
+    <style> 
+        .card{ 
+            border: 1px solid black; 
+            width: 250px; 
+            height: 95px; 
+             
+        } 
+        .wrapper{ 
+            position: absolute; 
+            top: 50px; 
+            left: 140px; 
+            border-radius: 0px; 
+             
+        } 
+        .card1{ 
+           margin-left: 65px; 
+           position: absolute; 
+            top: 17px; 
+        } 
+        .fast{ 
+            position: absolute; 
+            top: 50px; 
+            left: 312px; 
+            border-radius: 0px; 
+            
+        } 
+        .googl{ 
+            position: absolute; 
+            top: 50px; 
+            left: 345px; 
+            border-radius: 0px; 
+            
+        } 
+        .group{ 
+            width: 258px; 
+            position: absolute; 
+            top: 80px; 
+            left: 140px; 
+        } 
+        .card5{ 
+            width: 30px; 
+            height: 19px; 
+            position: absolute; 
+            left: 228px; 
+            background-color: violet; 
+            border: none; 
+        } 
+        .erkinai{ 
+            background-color: violet; 
+            margin: 5px 
+ 
+        } 
+        .wet{ 
+            color: blue; 
+        } 
+        .wet1{ 
+            color: red; 
+        } 
+        .wet2{ 
+            color: yellow; 
+        } 
+        .wet3{ 
+            color: green; 
+        } 
+                .a{
+            height: 250px;
+            width: 170px;
+            border:1px solid black;
+            box-shadow: 0px 0px 10px;
+            margin: 20px;
+            margin-left: 40px;
+            word-wrap:wrap;
+
+
+        }
+        .q{
+            font-size: 10px;
+            /*margin-left: 55px;*/
+        }
+        .q1{
+            font-size: 10px;
+            /*margin-left: 67px;*/
+        }
+
+        img {
+            height: 200px;
+            width: 170px;
+        }
+        .e2{
+            width: 1230px;
+            height: 40px;
+            text-align: center;
+            border: 1px solid black ;
+            background-color: grey;
+            box-shadow: 10px 10px 10px;
+            position: fixed;
+            border-radius: 10px;
+        }
+        .u{
+            margin : 7px;
+            height: 20px;
+            width: 250px;
+            margin-left: 900px;
+        }
+        .u1{
+            height: 20px;
+            height: 20px;
+        }
+
+
+
+    </style> 
+</head> 
+<body> 
+    <!-- <div class="card"> --> 
+        <!-- <span class="card1">MY TO DO LIST</span> --> 
+        <div id="textt" style=" font-size: 30px; position: absolute; left:220px;"> 
+            <span class="wet">G</span><span class="wet1">o</span><span class="wet2">o</span><span class="wet">g</span><span class="wet3">l</span><span class="wet1">e</span></div> 
+        <button class="fast" onclick="add()">OK</button> 
+         
+        <button class="googl" onclick="add1()">Delete</button> 
+    <!-- </div> --> 
+        <input class="wrapper" id="text1" type="search" placeholder="Окей ГУГЛ"/> 
+         
+        <div class="group" id="text"> 
+            
+        </div> 
+         <div class="e2">
+        <!-- <a href="https://www.google.com/search?q=bmw+e38&oq=&aqs=chrome.1.69i59i450l8.2355136354j0j15&sourceid=chrome&ie=UTF-8">Меню</a> -->
+        <input id="value" value="" class="u" placeholder="кайсы машина" type="" name="">
+        <button id="onclick" onclick="saaa()" class="u1" >OK</button>
+    </div>
+    <div id="goo"
+    style="display: flex; flex-wrap: wrap; ;margin: 20px;"></div>
+
+    
+    <script> 
+        // let removen = document.getElementsByTagName('span') 
+        let pp = document.getElementById('textt') 
+        let inp = document.getElementById('text1') 
+        const ELEMENT_ = document.getElementById('text') 
+        let besoft = JSON.parse(localStorage.getItem('key')) || []; 
+        function add(){ 
+            console.log(inp.value.length); 
+            if(inp.value.length > 0){ 
+                besoft.push(inp.value); 
+            } 
+             
+            inp.value = ''; 
+            localStorage.setItem('key', JSON.stringify(besoft)) 
+            ELEMENT_.innerHTML = ''; 
+            Map_() 
+        } 
+        Map_() 
+    function add1(){ 
+        localStorage.removeItem('key') 
+        ELEMENT_.innerHTML = '' 
+        besoft = []; 
+    } 
+    function namen(i){ 
+     besoft.splice(i, 1); 
+        localStorage.setItem("key", JSON.stringify(besoft)); 
+console.log(besoft) 
+ELEMENT_.innerHTML = '' 
+        Map_() 
+    } 
+    function Map_(){ 
+        besoft.map((e, i )=> { 
+            ELEMENT_.innerHTML += `<div class="erkinai">${i+1}  ${e} 
+            <button onclick="namen(${i})" class="card5">X</button> 
+            </div>` 
+            }) 
+    } 
+   
+        
+let mass = [
+            {
+                title: 'bmw',
+                price: '2000000',
+                img: 'https://i.ytimg.com/vi/D4owibomKRM/maxresdefault.jpg',
+            },
+            {
+                title: 'teslo',
+                price: '3000000',
+                img: 'https://platfor.ma/images/doc/b/7/b7576d8-004.jpg',
+            },
+            {
+                title: 'teslo3',
+                price: '4000000',
+                img: 'https://www.ixbt.com/img/n1/news/2022/0/1/5f6c5369ec05c4fe2700000f_large.jpg',
+            },
+            {
+                title: 'renj rover',
+                price: '5000000',
+                img: 'https://www.autotrader.com/wp-content/uploads/2021/06/2022-land-rover-range-rover-evoque-front-right-side.jpg',
+            },
+            {
+                title: 'teslo5',
+                price: '6000000',
+                img: 'https://motor.ru/imgs/2021/02/12/14/4510736/39446fb5ac3dfd5418b6dc8689d82d27374db5d5.jpg',
+            },
+            {
+                title: 'teslo6',
+                price: '7000000',
+                img: 'https://cdnimg.rg.ru/img/content/224/53/71/54_d_850.jpg',
+            },
+            {
+                title: 'teslo7',
+                price: '8000000',
+                img: 'https://cdn.motor1.com/images/mgl/4Vlgk/s1/4x3/tesla-model-x-first-drive.webp',
+            },
+            {
+                title: 'teslo8',
+                price: '9000000',
+                img: 'https://electrek.co/wp-content/uploads/sites/3/2021/05/Tesla-Logo-Hero.jpg?quality=82&strip=all&w=1000',
+            },
+            {
+                title: 'mercedes benz',
+                price: '10000000',
+                img: 'https://img5.goodfon.ru/wallpaper/nbig/c/38/mercedes-benz-w210-e260.jpg',
+            },
+            {
+                title: 'teslo10',
+                price: '11000000',
+                img:'https://img5.lalafo.com/i/posters/api/1d/43/50/a334631c15e5dd31d9e93c945a.jpeg',
+            },
+        ]
+
+        mass.map(e =>{
+            goo.innerHTML += `<div class='a'>
+            <img src='${e.img}'/>
+                        <h1 class='q' style='text-align: center;'>${e.title}</h1>
+            <h1 class='q1' style='text-align: center;'>${e.price }</h1>
+
+            <div/>`
+        }) 
+
+        let value = document.getElementById('value') 
+        // let onclick = document.getElementById('onclick')
+        function saaa() {
+            let mass2 = mass.filter(asan => asan.title.includes(value.value))
+            console.log(mass2)
+            goo.innerHTML ='';
+
+
+
+        mass2.map(e =>{
+            goo.innerHTML += `<div class='a'>
+            <img src='${e.img}'/>
+                        <h1 class='q' style='text-align: center;'>${e.title}</h1>
+            <h1 class='q1' style='text-align: center;'>${e.price }</h1>
+
+            <div/>`
+        }) 
+
+
+            
+         } 
+
+        
+    </script> 
+</body> 
+</html>

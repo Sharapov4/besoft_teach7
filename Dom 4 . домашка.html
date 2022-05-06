@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		
+		.q{
+			/*display: flex;
+			justify-content: center;
+			align-items: center;*/
+			height: 400px;
+			width: 400px;
+			border: 1px solid black;
+		}
+		.q1{
+
+			height: 20px;
+			width: 60px;
+
+			/*display: flex;*/
+			/*justify-content: center;
+			align-items: center;*/
+			border-radius: 10px;
+			border: 1px solid black;
+		}
+		.q2{
+			height: 200px;
+			width: 300px;
+			margin-top: 50px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="q">
+		<button id="div" onclick="div()" class="q1" > Показать</button>
+		<div id="img" class="q2"><img src="https://photo-baomoi.zadn.vn/w700_r1/2021_06_09_119_39124843/09274e4f420dab53f21c.jpg">></div>
+	</div>
+
+	<script type="text/javascript">
+		let div = document.getElementByID('div')
+		let img = document.getElementByID('text')
+		function =(){
+
+			if (div.innerHTML == 'Показать') {
+				div.style.backgraundColor = 'red'
+				img.innerHTML = ''
+			}else{
+				div.innerHTML == 'не Показать'
+				div.innerHTML.backgraundColor = 'black'
+				img.innerHTML =''
+			}
+		}
+
+		
+
+
+	</script>
+
+</body>
+</html>

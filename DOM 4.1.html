@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	.q1{
+		height: 1000px;
+		width: 1000px;
+		display: flex;
+
+}
+</style>
+</head>
+<body>
+	<div class="q1">
+	<!-- <button  style="border-radius: 50px;background-color: green;height: 100px;width: 100px;" onclick="name_('-')">-</button> -->
+	<!-- <div  style="border-radius: 50px;background-color: green ;height: 100px;width: 100px;display: flex;justify-content: center;align-items: center;" id="asan"></div> -->
+	<button style="border-radius: 50px;background-color: green;height: 100px;width: 100px;" onclick="name_('+')">добавить</button>
+	<div class="foto" id="id1" onclick=""></div>
+</div>
+
+	<script type="text/javascript">
+		let d = document.getElementById('asan')
+
+		let number = 'удалить';
+		function name_(num){
+			if (num == 'добавить') {
+				number +='удалить'
+			}else if (number > 'добавить') {
+				number -= 'удалить'
+			}
+			d.innerHTML= number
+		}
+
+	</script>
+
+</body>
+</html>

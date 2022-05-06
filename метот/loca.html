@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input id="input" type="" name="">
+	<button id="ok" onclick="ok1()">Ok</button>
+	<button  onclick="udal()" >udal</button>
+	<div id="div">
+	</div>
+	<script type="text/javascript">
+		// let s = []
+		let input = document.getElementById('input')
+		let ok = document.getElementById('ok')
+		let dodo  = document.getElementById('div')
+		let udal_ = document.getElementById('udal_')
+		let dada = []
+		
+
+			function udal(){
+					localStorage.removeItem('key')
+					dada = []
+				dodo.innerHTML = ``
+
+			 
+				}
+
+		function ok1() {
+			// [input.value] =''
+				localStorage.setItem('key',JSON.stringify(dada))
+		dada = JSON.parse(localStorage.getItem('key'));
+
+
+			dada.push(input.value)
+			dodo.innerHTML='';
+			dada.map(e => {
+				dodo.innerHTML += `<div><ol>${e}</ol></div>`
+
+			}) 
+				input.value = '';
+
+				// console.log(dada)
+
+		}
+		dada = JSON.parse(localStorage.getItem('key')) || [];
+			dada.map(e => {
+				dodo.innerHTML += `<div><ol>${e}</ol></div>`
+
+			
+
+			}) 
+
+
+		
+
+
+
+	</script>
+
+</body>
+</html>

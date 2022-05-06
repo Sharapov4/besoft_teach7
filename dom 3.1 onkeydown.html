@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="ELEMENT" onkeydown="">
+		<h1></h1>
+	</div>
+<script type="text/javascript">
+		const text = 'Hello Ascarali';
+		const ELEMENT = document.getElementsByTagName('span')	
+
+
+			for(let i = 0; i < text.length; i++){
+				ELEMENT.innerHTML += `<span>${[text[i]}</span>`;
+ 		}
+			document.body.onkeydown = {e} =>{
+				const letter = e.key.tolowerCase();
+				console.log(e.keyCode)
+				if (e.keyCode == 8 && index > 0) {
+					index -= 1 ;
+					ELEMENT.children[index].style.color ='black'
+				}else{
+					ELEMENT.children[index].style.color ='red'
+					index ++
+				}
+			}
+
+</script>
+
+</body>
+</html>

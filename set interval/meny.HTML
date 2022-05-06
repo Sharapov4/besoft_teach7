@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .anas {
+
+            animation-name: anas;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+            margin-left: 465px;
+            margin-top: -150px;
+            overflow: hidden;
+        }
+
+        @keyframes anas {
+            0% {
+                transform: rotate(-200deg);
+
+            }
+
+            50% {
+                transform: rotate(200deg);
+            }
+
+            100% {
+                transform: rotate(-200deg);
+            }
+        }
+
+
+        .verx {
+            height: 400px;
+            width: 1250px;
+            border: 1px solid black;
+            background-color: black;
+        }
+
+        .bes {
+            color: white;
+            font-size: 40px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            margin-top: 80px;
+        }
+
+        .as {
+            color: white;
+            font-size: 30px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .vniz {
+            height: 2500px;
+            width: 1250px;
+            border: 1px solid black;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* #82AEF6 */
+        .ram {
+            height: 250px;
+            width: 280px;
+            background-color: #F7BB59;
+            overflow: hidden;
+            margin: 10px;
+            border: 1px solid gray;
+            border-radius: 10px;
+            position: relative;
+            z-index: 1;
+            box-shadow: 10px 10px 10px gray;
+            margin-top: -380px;
+
+        }
+
+        .piz {
+            margin-left: -120px;
+            height: 250px;
+            width: 250px;
+            position: relative;
+            z-index: 2;
+            border-top-right-radius: 10%;
+            border-bottom-right-radius: 10%;
+
+        }
+
+        .piz:hover {
+            margin-left: 0px;
+            transition: 2s;
+            z-index: 2;
+        }
+
+        .nad {
+            font-size: 10px;
+            color: black;
+            margin-left: 220px;
+            position: absolute;
+            /* position: relative; */
+
+            margin-top: 90px;
+            margin-left: 130px;
+
+
+
+        }
+
+        .s1 {
+            position: absolute;
+            margin-left: 140px;
+            margin-top: 170px;
+            z-index: 3;
+        }
+
+        .text {
+            margin: 20px;
+        }
+
+
+
+
+
+
+        .rama {
+            height: 250px;
+            width: 280px;
+            background-color: #F7BB59;
+            overflow: hidden;
+            margin: 10px;
+            border: 1px solid gray;
+            border-radius: 10px;
+            position: relative;
+            z-index: 1;
+            box-shadow: 10px 10px 10px gray;
+            margin-top: -380px;
+
+        }
+
+        .pizww {
+            margin-left: -120px;
+            height: 250px;
+            width: 250px;
+            bottom: 55px;
+            position: relative;
+            z-index: 2;
+            border-top-right-radius: 10%;
+            border-bottom-right-radius: 10%;
+
+        }
+
+        .pizww:hover {
+            margin-left: 0px;
+            transition: 2s;
+            z-index: 2;
+        }
+
+        .nadww {
+            font-size: 10px;
+            color: black;
+            margin-left: 220px;
+            position: absolute;
+            /* position: relative; */
+
+            margin-top: 150px;
+            margin-left: 35px;
+        }
+
+        .s12 {
+            position: absolute;
+            margin-left: 100px;
+            margin-top: 200px;
+            z-index: 3;
+        }
+
+        .pizw1 {
+            /* margin-left: 0px; */
+            height: 250px;
+            width: 250px;
+            bottom: 0px;
+            position: relative;
+            z-index: 2;
+            border-top-right-radius: 10%;
+            border-bottom-right-radius: 10%;
+
+        }
+
+        .pizww:hover {
+            margin-left: -10px;
+            transition: 2s;
+            z-index: 2;
+        }
+
+        .nada {
+            font-size: 10px;
+            color: black;
+            margin-left: 220px;
+            position: absolute;
+            /* position: relative; */
+
+            margin-top: 90px;
+            margin-left: 130px;
+        }
+
+        .pizw1 {
+            /* margin-left: -125px; */
+            height: 250px;
+            width: 250px;
+            bottom: 0px;
+            position: relative;
+            z-index: 2;
+            border-top-right-radius: 10%;
+            border-bottom-right-radius: 10%;
+
+        }
+
+        .pizw1:hover {
+            margin-left: -125px;
+            transition: 2s;
+            z-index: 2;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <div class="verx">
+            <h1 class="bes">Besoft FooD</h1>
+            <div class="as" id="div_"></div>
+        </div>
+        <div class="vniz">
+            <a href="file:///C:/Users/user/Documents/dom/set%20interval/Local.html">корзина</a>
+
+            <img class="anas" src="https://static.pizzasushiwok.ru/images/menu_new/1596-300.jpg">
+            <a href="https://dodopizza.kg/bishkek" class="text">говядина</a>
+            <a href="" class="text"> курица</a>
+            <a href="" class="text"> напитки</a>
+            <a href="" class="text"> совус</a>
+
+            <div class="ram" id="card1" style="display: flex;">
+
+                <img class="piz" src="https://images.pizza33.ua/products/product/m0JGsuHe13JdmMiCYuSNMtoOrcWY0tWU.jpg">
+
+                <span class="nad" style="z-index: 1;">Додо Ветчина из цыпленка, моцарелла, шампиньоны,чеснок, томатный
+                    соус,фарш говяжий
+                    <strong style="margin: 20px;color: red; margin-left: 2px; ">455com</strong>
+                </span>
+                <button type="button" id="btnLocal" class="btn btn-outline-dark  s1"
+                    style="margin-bottom: 70px;">Заказать</button>
+            </div>
+            <div class="ram" style="display: flex;">
+
+                <img class="piz"
+                    src="https://dodopizza-a.akamaihd.net/static/Img/Products/c940c5751e6d420e997d86c26a8ba16f_366x366.jpeg">
+
+                <span class="nad" style="z-index: 1;">Пицца из половинок
+                    Соберите свою пиццу 35 см с двумя разными вкусами
+                    <strong style="margin: 20px;color: red; margin-left: 2px; ">505com</strong>
+                </span>
+                <button type="button" class="btn btn-outline-dark  s1" style="margin-bottom: 70px;">Заказать</button>
+            </div>
+            <div class="ram" style="display: flex;">
+
+                <img class="piz"
+                    src="https://dodopizza-a.akamaihd.net/static/Img/Products/3f19abd29d2a477a960992ec2f30782c_366x366.jpeg">
+
+                <span class="nad" style="z-index: 1;">
+                    Маргарита 🌱 Увеличенная порция моцареллы, томаты, итальянские травы, томатный соус
+                    <strong style="margin: 20px;color: red; margin-left: 2px; ">420com</strong>
+
+                </span>
+                <button type="button" class="btn btn-outline-dark  s1" style="margin-bottom: 70px;">Заказать</button>
+            </div>
+            <div class="ram" style="display: flex;">
+
+                <img class="piz"
+                    src="https://dodopizza-a.akamaihd.net/static/Img/Products/a5fbe87430b943b7833e632e94807355_366x366.jpeg">
+
+                <span class="nad" style="z-index: 1;">
+                    Моцарелла, сладкий перец, томаты, красный лук, фарш из говядины, сушеный перец чили, томатный соус
+                    <strong style="margin: 20px;color: red; margin-left: 2px; ">420com</strong>
+
+                </span>
+                <button type="button" class="btn btn-outline-dark  s1" style="margin-bottom: 70px;">Заказать</button>
+            </div>
+            <div class="ram" style="display: flex;">
+
+                <img class="piz"
+                    src="https://dodopizza-a.akamaihd.net/static/Img/Products/be07674c38c54fd78f878a33988a4373_366x366.jpeg">
+
+                <span class="nad" style="z-index: 1;">
+                    Ветчина из цыпленка, шампиньоны, моцарелла, томатный соус
+                    <strong style="margin: 20px;color: red; margin-left: 2px; ">420com</strong>
+
+                </span>
+                <button type="button" class="btn btn-outline-dark  s1" style="margin-bottom: 70px;">Заказать</button>
+
+            </div>
+            <div class="ram" style="display: flex;">
+
+                <img class="piz"
+                    src="https://dodopizza-a.akamaihd.net/static/Img/Products/22eead365d6a451eb0e398a6bab07823_366x366.jpeg">
+
+                <span class="nad" style="z-index: 1;">
+                    Пепперони из цыпленка, моцарелла, томатный соус
+                    <strong style="margin: 20px;color: red; margin-left: 2px; ">420com</strong>
+
+                </span>
+                <button type="button" class="btn btn-outline-dark  s1" style="margin-bottom: 70px;">Заказать</button>
+            </div>
+
+
+
+
+
+            <div class="rama" style="display: flex;">
+
+                <img class="pizww"
+                    src="https://sushivesla.kg/assets/images/products/84/small/thumb-269-goods-photo-big-removebg-preview.png">
+
+                <span class="nadww" style="z-index: 1;">
+                    Чиз лосось 365 г - 8 шт Лосось, мягкий сыр, нори, рис
+                    <strong style="margin: 20px;color: red; margin-left: 2px; ">340 сом</strong>
+
+                </span>
+                <button type="button" class="btn btn-outline-dark  s12" style="margin-bottom: 70px;">Заказать</button>
+            </div>
+            <div class="rama" style="display: flex;">
+
+                <img class="pizww"
+                    src="https://sushivesla.kg/assets/images/products/85/small/thumb-270-goods-photo-big-removebg-preview.png">
+
+                <span class="nadww" style="z-index: 1;">
+                    Чиз угорь 355 г - 8 шт Угорь, кунжут, мягкий сыр, нори, рис
+                    <strong style="margin: 20px;color: red; margin-left: 2px; ">425 сом</strong>
+
+                </span>
+                <button type="button" class="btn btn-outline-dark  s12" style="margin-bottom: 70px;">Заказать</button>
+            </div>
+
+
+            <div class="rama" style="display: flex;">
+
+                <img class="pizww"
+                    src="https://sushivesla.kg/assets/images/products/86/small/thumb-271-goods-photo-big-removebg-preview.png">
+
+                <span class="nadww" style="z-index: 1;">
+                    Ямайка 365 г - 8 шт Лосось, масаго оранжевая, мягкий сыр, огурец, нори, рис
+                    <strong style="margin: 20px;color: red; margin-left: 2px; ">370 сом</strong>
+
+                </span>
+                <button type="button" class="btn btn-outline-dark  s12" style="margin-bottom: 70px;">Заказать</button>
+            </div>
+            <div class="rama" style="display: flex;">
+
+                <img class="pizww"
+                    src="https://sushivesla.kg/assets/images/products/87/small/thumb-272-goods-photo-big-removebg-preview.png">
+
+                <span class="nadww" style="z-index: 1;">
+                    Мексиканский 275 г - 8 шт Спайси соус, тобико оранжевая, креветка, огурец, нори, ри
+                    <strong style="margin: 20px;color: red; margin-left: 2px; ">425 сом</strong>
+
+                </span>
+                <button type="button" class="btn btn-outline-dark  s12" style="margin-bottom: 70px;">Заказать</button>
+            </div>
+            <div class="rama" style="display: flex;">
+
+                <img class="pizww"
+                    src="https://sushivesla.kg/assets/images/products/91/small/thumb-291-goods-photo-big-removebg-preview.png">
+
+                <span class="nadww" style="z-index: 1;">
+                    Атлантический 325 г - 8 шт угорь, лосось, тобико оранжевая, мягкий сыр, нори, рис
+                    <strong style="margin: 20px;color: red; margin-left: 2px; ">375 сом</strong>
+
+                </span>
+                <button type="button" class="btn btn-outline-dark  s12" style="margin-bottom: 70px;">Заказать</button>
+            </div>
+            <div class="rama" style="display: flex;">
+
+                <img class="pizww"
+                    src="https://sushivesla.kg/assets/images/products/95/small/thumb-41-goods-photo-big-removebg-preview.png">
+
+                <span class="nadww" style="z-index: 1;">
+                    Овощной 215 г - 8 шт салат Айсберг, такуан, укроп, томат, огурец, нори, рис
+                    <strong style="margin: 20px;color: red; margin-left: 2px; ">180 сом</strong>
+
+                </span>
+                <button type="button" class="btn btn-outline-dark  s12" style="margin-bottom: 70px;">Заказать</button>
+            </div>
+
+
+            <div class="ram" style="display: flex;">
+
+                <img class="piz" src="https://sushiboss72.ru/d/1566442379_555.jpg">
+
+                <span class="nad" style="z-index: 1;">
+                    Сырный соус
+                    <strong style="margin: 20px;color: red; margin-left: 2px; ">20coм</strong>
+
+                </span>
+                <button type="button" class="btn btn-outline-dark  s1" style="margin-bottom: 70px;">Заказать</button>
+            </div>
+            <div class="ram" style="display: flex;">
+
+                <img class="piz"
+                    src="https://calorizator.ru/sites/default/files/imagecache/product_512/product/sauce-11.jpg">
+
+                <span class="nad" style="z-index: 1;">
+                    Томатный соус
+                    <strong style="margin: 20px;color: red; margin-left: 2px; ">20coм</strong>
+
+                </span>
+                <button type="button" class="btn btn-outline-dark  s1" style="margin-bottom: 70px;">Заказать</button>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="ram" style="display: flex;">
+
+                <img class="pizw1" src="https://www.sostav.ru/images/news/2016/07/19/slides/jwf3hYSc_m.jpg">
+
+                <span class="nada" style="z-index: 2;">
+                    Fanta 0.5л,1л
+                    <strong style="margin: 20px;color: red; margin-left: 2px; ">55сом/80com</strong>
+                </span>
+                <button type="button" class="btn btn-outline-dark  s1" style="margin-bottom: 70px;">Заказать</button>
+            </div>
+            <div class="ram" style="display: flex;">
+
+                <img class="pizw1"
+                    src="https://marketingweek.imgix.net/content/uploads/2021/04/19161107/Coca-Cola-cans-on-brick.png?auto=compress,format&q=60&w=736&h=429">
+
+                <span class="nada" style="z-index: 2;">
+                    Coca-Cola 0.5л, 1л
+
+                    <strong style="margin: 20px;color: red; margin-left: 2px; ">55coм/80сом</strong>
+                </span>
+                <button type="button" class="btn btn-outline-dark  s1" style="margin-bottom: 70px;">Заказать</button>
+            </div>
+
+            <div class="ram" style="display: flex;">
+
+                <img class="pizw1"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj42rXMjfJCqnfT4aIJs5bAUfNAv9r2c7w1Q&usqp=CAU">
+
+                <span class="nada" style="z-index: 2;">
+                    Pepsi 0.5л , 1л
+                    <strong style="margin: 20px;color: red; margin-left: 2px; ">55сом/80coм</strong>
+
+                </span>
+                <button type="button" class="btn btn-outline-dark  s1" style="margin-bottom: 70px;">Заказать</button>
+            </div>
+            <div class="ram" style="display: flex;">
+
+                <img class="pizw1"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsU0HP8YpQqJEn0zKrbctBG46rY58QfOAJp7HwJec_JWmIl-jxT8iGJ5jAHUJ9QEmc1rk&usqp=CAU">
+
+                <span class="nada" style="z-index: 2;">
+                    Чай клубничный
+                    <strong style="margin: 20px;color: red; margin-left: 2px; ">420coм</strong>
+
+                </span>
+                <button type="button" class="btn btn-outline-dark  s1" style="margin-bottom: 70px;">Заказать</button>
+            </div>
+            <div class="ram" style="display: flex;">
+
+                <img class="pizw1" src="https://chayguru.info/wp-content/uploads/2019/03/ice-tea-0-690x405.jpeg">
+
+                <span class="nada" style="z-index: 2;">
+                    Чай с лесными ягадами
+                    <strong style="margin: 20px;color: red; margin-left: 2px; ">140coм</strong>
+
+                </span>
+                <button type="button" class="btn btn-outline-dark  s1" style="margin-bottom: 70px;">Заказать</button>
+
+            </div>
+            <div class="ram" style="display: flex;">
+
+                <img class="pizw1" src="https://ahmadtea.ru/wp-content/uploads/2020/02/ajs-ti2-860x484.jpg">
+
+                <span class="nada" style="z-index: 2;">
+                    ай с лимоном и мятом
+                    <strong style="margin: 20px;color: red; margin-left: 2px; ">120coм</strong>
+
+                </span>
+                <button type="button"  class="btn btn-outline-dark  s1" style="margin-bottom: 70px;">Заказать</button>
+            </div>
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+    <script>
+        let sa = 'Тамак-Аштарды  жеткируу:пицца,роллы,суши'
+
+        let div_ = document.getElementById('div_')
+        let d = setInterval(() => {
+            div_.innerHTML = `<div>${sa}</div>`
+        }, 2000)
+
+        let btnLocal = document.getElementById('btnLocal')
+        btnLocal.onclick = () => {
+            let object1 = {
+                img: "https://images.pizza33.ua/products/product/m0JGsuHe13JdmMiCYuSNMtoOrcWY0tWU.jpg",
+                title: "Додо Ветчина из цыпленка, моцарелла, шампиньоны,чеснок, томатный соус,фарш говяжий",
+                prise: "455com"
+            }
+            localStorage.setItem('key', JSON.stringify(ob))
+        }
+        let oo = document.getElementById('ii')
+          let oma = document.getElementById('inp1') 
+            let a = document.body
+
+        oma.onclick = (e) =>{
+  if (e.target.checked) {
+
+    a.style.backgroundColor = 'black'
+
+  }else{
+    a.style.backgroundColor = 'white'
+  }
+}
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

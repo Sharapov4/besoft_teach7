@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	 <input  type="checkbox" id="inp1" value="red" name=""> 
+ 	 <label for="inp1">red</label>
+
+ 	  <input  type="checkbox" id="inp12" value="blue" name=""> 
+ 	 <label for="inp12">blue</label>
+
+
+ 	  <input  type="checkbox" value="black" id="inp13" name=""> 
+ 	 <label for="inp13">black</label>
+
+		<script type="text/javascript">
+			 let oo = document.getElementById('ii')
+		 let oma = document.getElementById('inp1')
+		 let a = document.body
+
+		 let oma1 = document.getElementById('inp12')
+
+		 let oma2 = document.getElementById('inp13')
+
+
+							 oma.onclick = (e) =>{
+							  if (e.target.checked && e.target.value == 'red') {
+
+							    a.style.backgroundColor = 'red'
+							    a.value =''
+
+
+							  }else{
+							    a.style.backgroundColor = ''
+							  }
+							}
+							 oma1.onclick = (e) =>{
+							  if (e.target.checked && e.target.value == 'blue') {
+							    a.value =''
+							  	
+							    a.style.backgroundColor = 'blue'
+
+
+							  }else{
+							    a.style.backgroundColor = ''
+							  }
+							}
+							 oma2.onclick = (e) =>{
+							  if (e.target.checked && e.target.value == 'black') {
+							    a.value =''
+							  	
+							    a.style.backgroundColor = 'black'
+
+
+							  }else{
+							    a.style.backgroundColor = ''
+							  }
+							}
+							
+							
+			
+
+		</script>
+
+</body>
+</html>

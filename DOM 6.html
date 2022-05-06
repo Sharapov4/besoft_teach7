@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="ss">
+	<input value="" id="inp"/>
+	<button id="sa" disabled >ok</button>
+	<div id="inpr" class="q " style="display: none;">hello</div>
+	
+		<script type="text/javascript">
+		let inp = document.getElementById('inp')
+		let inpr = document.getElementById('inpr')
+		let sa = document.getElementById('sa')
+		inp.oninput = function() {
+			if(inp.value.length == 3){
+				sa.disabled = false
+
+				// inpr.style.display = 'block'
+			}else{
+				sa.disabled = true
+			}
+
+			}
+			
+			
+	</script>
+
+</body>
+</html>

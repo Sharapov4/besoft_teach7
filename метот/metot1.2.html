@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input id="q" value="" type="" name="">
+	<button onclick="sa()">ok</button>
+	<div>
+		<ol id="div1">
+		</ol>
+	</div>
+	<script>
+		let q = document.getElementById('q')
+		let div1 = document.getElementById('div1')
+		let a = [];
+		function sa() {
+				a.push(q.value)
+				q.value = '';
+				div1.innerHTML = '';
+
+			
+		for(let i = 0 ; i < a.length ; i++){
+			if (i % 2 == 0) {
+					div1.innerHTML += `<li style = "color:red;">${a[i]}</li>`
+			}else if (i % 2 == 1) {
+					div1.innerHTML += `<li style = "color:green;">${a[i]}</li>`
+				
+			}
+		}
+
+	}
+		
+		
+	</script>
+
+</body>
+</html>

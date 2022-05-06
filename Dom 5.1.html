@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input value="" id="input" type="text" name="">
+	<button class="but" onclick="name_()">Добавить</button>
+	<div id="asan"> <ol id="oma"></ol></div>
+	<script type="text/javascript">
+		
+		let d = document.getElementById('input')
+		let p = document.getElementById('asan')
+		let h = document.getElementById('oma')
+
+		function name_(){
+			// p.innerHTML +=`<li> ${d.value}</li>` 
+			if (d.value == 'Садыр') {
+				p.innerHTML +=`<li> ${ 'Садыр Жапаров является пророссийским политиком. Его первая поездка в Россию 25—26 февраля стала первой поездкой в зарубежную страну во время пребывания '}</li>` 
+					d.value = ''}
+						else if (d.value == 'Бакиев') {
+				p.innerHTML +=`<li> ${d.value = 'Курманбек Салиевич Бакиев Бывший Президент Киргизии' }</li>` 
+					d.value = ''
+			}
+				else if (d.value == 'Акаев') {
+				p.innerHTML +=`<li> ${d.value = 'Аскар Акаевич Акаев Бывший Президент Киргизии' }</li>` 
+					d.value = ''
+
+			}
+		
+
+
+		}
+
+	</script>
+
+</body>
+</html>

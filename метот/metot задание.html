@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<div style="" id="id_" class="a"></div>
+
+
+	<script type="text/javascript">
+		let a = document.getElementById('id_')
+		let s = document.body
+
+		s.onkeydown = (oma) => {
+			if (oma.keyCode == 32 ) {
+				a.innerHTML ='Hello';
+			}
+		}
+		s.onkeyup = (oma) =>{
+			if (oma.keyCode == 32) {
+				a.innerHTML = '';
+			}
+
+		}
+
+
+
+
+
+
+	</script>
+
+
+
+
+</body>
+</html>

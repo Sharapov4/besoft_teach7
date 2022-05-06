@@ -1,0 +1,156 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+ <title></title> 
+
+ <style type="text/css">
+  .u{
+    height: 320px;
+    width:310px;
+    border: 2px solid black;
+    background-color: red;
+
+
+ }  
+ .q{
+  top: 20px;
+  margin:10px;
+  font-size: 22px;
+  border-radius: 10px;
+ }
+ </style>
+  
+
+<!-- <style type="text/css"> 
+#idiv1{ 
+  width: 400px; 
+  height: 300px; 
+  border-radius: 20px; 
+  border: 2px solid black; 
+  background-color: green; 
+  position: relative; 
+  margin-top: 150px; 
+  margin-left: 400px; 
+} 
+#idin1{ 
+ position: absolute; 
+ background-color: white; 
+ width: 320px; 
+ height: 50px; 
+ border-radius: 10px; 
+ margin-left: 35px; 
+} 
+#idin2{ 
+ position: absolute; 
+ background-color: white; 
+ width: 320px; 
+ height: 50px; 
+ margin-top: 80px; 
+ border-radius: 10px; 
+ margin-left: 35px; 
+} 
+.p1{ 
+ font-size: 30px; 
+ color: white; 
+ margin-left: 80px; 
+} 
+#idbut1{ 
+margin-top: 200px;  
+width: 150px; 
+height: 50px; 
+border-radius: 10px; 
+margin-left: 230px; 
+} 
+#idiv2{ 
+font-size: 40px; 
+color: red; 
+margin-left: 600px; 
+} 
+body{ 
+ background-color: grey; 
+} 
+</style> 
+ --></head> 
+<body>
+ <input  type="checkbox" id="inp1" name=""> 
+ <span style="transition: 0.5s" id="ii">Темный режим</span>
+  <div class="u" >
+    <h1 class="q1"> Войти в систему</h1>
+    <input class="q" type="" name="" placeholder="логини">
+    <input class="q" type="" name="" placeholder="пороль">
+  </div>
+   
+<!-- 
+ <div id="idiv2"></div> 
+ <div id="idiv1"> 
+  <p class="p1">Войдите в систему</p> 
+  <input id="idin1" type="text" placeholder="at"> 
+  <input id="idin2" type="password" placeholder="porol">  -->
+  
+
+ <!--  
+  <button  onclick="own_()" id="idbut1" disabled>Войти</button> 
+ </div>  -->
+<script type="text/javascript"> 
+  let mass=[ 
+{ }]
+//  email:'urmatbek', 
+//  pass:'urmat1' 
+// }, 
+// { 
+//  email:'ulay', 
+//  pass:'ulay1' 
+// }, 
+// { 
+//  email:'samatbek', 
+//  pass:'samat1' 
+// } 
+// ]; 
+ 
+ // let idin1 = document.getElementById('idin1') 
+ // let idin2 = document.getElementById('idin2') 
+ // let idbut1 = document.getElementById('idbut1') 
+ // let idiv2 = document.getElementById('idiv2') 
+ let oo = document.getElementById('ii')
+ let oma = document.getElementById('inp1')
+ let a = document.body
+ 
+//   idin1.oninput = function (){ 
+//    if (idin1.value.length >= 1){ 
+//     idbut1.disabled = true 
+//    }else{ 
+//      idbut1.disabled = false 
+//    } 
+// // } 
+//    idin2.oninput = function (){ 
+//    if (idin2.value.length >= 1  ){ 
+//     idbut1.disabled = false  
+//    }else{ 
+//      idbut1.disabled = true 
+//    } 
+//   } 
+ 
+  // function own_(){ 
+  //  for(let i=0; i < mass.length; i++){ 
+  //   if (idin1.value == mass[i].email && idin2.value == mass[i].pass){ 
+  //    idiv2.innerHTML ='Hello World' 
+  //    i += mass.length 
+  //   }else{ 
+  //    idiv2.innerHTML ='' 
+  //   } 
+  //  } 
+  // } 
+
+oma.onclick = (e) =>{
+  if (e.target.checked) {
+
+    a.style.backgroundColor = 'black'
+
+  }else{
+    a.style.backgroundColor = 'white'
+  }
+}
+
+</script> 
+</body> 
+</html>
